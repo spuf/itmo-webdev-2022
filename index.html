@@ -4,35 +4,37 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>ITMO Web-dev 2022</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header><h1>ITMO Web-dev 2022</h1></header>
-    <main>
-      <section>
-        <div><img src="images/screenshot.png" width="100" /></div>
-        <div><a href="https://github.com/spuf/itmo-webdev-2022">spuf/itmo-webdev-2022</a></div>
-        <div><p>[x] [ ] [ ] [ ] [ ]</p></div>
-      </section>
-      <section>
-        <div><img src="images/screenshot.png" width="100" /></div>
-        <div><a href="https://github.com/spuf/itmo-webdev-2022">spuf/itmo-webdev-2022</a></div>
-        <div><p>[x] [ ] [ ] [ ] [ ]</p></div>
-      </section>
-      <section>
-        <div><img src="images/screenshot.png" width="100" /></div>
-        <div><a href="https://github.com/spuf/itmo-webdev-2022">spuf/itmo-webdev-2022</a></div>
-        <div><p>[x] [ ] [ ] [ ] [ ]</p></div>
-      </section>
-      <section>
-        <div><img src="images/screenshot.png" width="100" /></div>
-        <div><a href="https://github.com/spuf/itmo-webdev-2022">spuf/itmo-webdev-2022</a></div>
-        <div><p>[x] [ ] [ ] [ ] [ ]</p></div>
-      </section>
-      <section>
-        <div><img src="images/screenshot.png" width="100" /></div>
-        <div><a href="https://github.com/spuf/itmo-webdev-2022">spuf/itmo-webdev-2022</a></div>
-        <div><p>[x] [ ] [ ] [ ] [ ]</p></div>
-      </section>
+    <main id="root">
+      <script>
+        const root = document.getElementById("root");
+        fetch("./people.json")
+          .then((response) => response.json())
+          .then((people) => {
+            let html = "";
+            for (const group of people) {
+              html += `<section><h2>${group.group}</h2><div class="students">`;
+              for (const student of group.students) {
+                html += `<article class="student">
+                  <div>
+                    <a href="${student.url}" target="_blank"><img src="images/${student.owner}.png" width="256" /></a>
+                  </div>
+                  <div>
+                    <a href="https://github.com/${student.owner}/${student.repo}" target="_blank">${student.owner}</a>
+                  </div>
+                  <div>
+                    <p>${"".padEnd(student.progress, "★").padEnd(7, "☆")}</p>
+                  </div>
+                  </article>`;
+              }
+              html += `</div></section>`;
+            }
+            root.insertAdjacentHTML("afterbegin", html);
+          });
+      </script>
     </main>
   </body>
 </html>
