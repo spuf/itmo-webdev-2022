@@ -6,13 +6,13 @@
         "owner": "ronald1-1-1",
         "repo": "web-dev-3",
         "url": "https://ronald1-1-1.github.io/web-dev-3/",
-        "progress": 0
+        "progress": 1
       },
       {
         "owner": "steppanovva",
         "repo": "web-labs",
         "url": "https://steppanovva.github.io/web-labs/",
-        "progress": 0
+        "progress": 1
       },
       {
         "owner": "dima-prezhentsov",
@@ -24,7 +24,7 @@
         "owner": "nikitakurylev",
         "repo": "nikitakurylev.github.io",
         "url": "https://nikitakurylev.github.io/",
-        "progress": 0
+        "progress": 1
       },
       {
         "owner": "maximrakov",
@@ -36,19 +36,19 @@
         "owner": "aa1dar",
         "repo": "ITMO_Web",
         "url": "https://aa1dar.github.io/ITMO_Web/",
-        "progress": 0
+        "progress": 2
       },
       {
         "owner": "kitromanov",
         "repo": "web_sem5",
         "url": "https://kitromanov.github.io/web_sem5/",
-        "progress": 1
+        "progress": 2
       },
       {
         "owner": "nastyakoltsova",
         "repo": "weblabs",
         "url": "https://nastyakoltsova.github.io/weblabs/",
-        "progress": 0
+        "progress": 2
       },
       {
         "owner": "davidataka",
@@ -60,7 +60,31 @@
         "owner": "EugeniyaMo",
         "repo": "WebProject",
         "url": "https://eugeniyamo.github.io/WebProject/",
-        "progress": 0
+        "progress": 1
+      },
+      {
+        "owner": "XeonStaf",
+        "repo": "WebProgramming",
+        "url": "https://xeonstaf.github.io/WebProgramming/",
+        "progress": 1
+      },
+      {
+        "owner": "Mihinator3000",
+        "repo": "Web",
+        "url": "https://mihinator3000.github.io/Web/",
+        "progress": 1
+      },
+      {
+        "owner": "wilfordaf",
+        "repo": "IS-2020_5_Sem-WebProgramming",
+        "url": "https://wilfordaf.github.io/IS-2020_5_Sem-WebProgramming/",
+        "progress": 1
+      },
+      {
+        "owner": "dragoneknp",
+        "repo": "ITMO-WEB",
+        "url": "https://dragoneknp.github.io/ITMO-WEB/",
+        "progress": 7
       }
     ]
   },
@@ -83,13 +107,13 @@
         "owner": "Alikyshkin",
         "repo": "webSiteItmo",
         "url": "https://alikyshkin.github.io/webSiteItmo/",
-        "progress": 1
+        "progress": 2
       },
       {
         "owner": "honeySimulator",
         "repo": "Web-programming-5-sem",
         "url": "https://honeysimulator.github.io/Web-programming-5-sem/",
-        "progress": 0
+        "progress": 1
       },
       {
         "owner": "YaraHmltn",
