@@ -6,6 +6,6 @@
     "build": "docker run --rm --ipc=host --init -v $PWD:$PWD -w $PWD mcr.microsoft.com/playwright:v$(node -e \"console.log(require('./package.json').dependencies['@playwright/test'])\") npx playwright test -u"
   },
   "dependencies": {
-    "@playwright/test": "1.25.0"
+    "@playwright/test": "1.28.0"
   }
 }
